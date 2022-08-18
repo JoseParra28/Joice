@@ -1,4 +1,4 @@
-body {
+/*body {
     background-color: antiquewhite;
 }
 .wrapper {
@@ -9,24 +9,63 @@ body {
 .flex-container {
 display: flex;
 background-color: aqua;
-flex-wrap: nowrap;
+flex-wrap: wrap;
 }
 .box-one {
     height: 100px;
-    min-width: 100px;
-    flex-grow: 3;
+    flex: 1;
     background-color: black;
     
 }
 .box-two {
     height: 100px;
-    min-width: 200px;
-    flex-grow: 1;
+    flex: 1;
     background-color: gray;
 }
 .box-three {
     height: 100px;
-    min-width: 200px;
-    flex-grow: 1;
+    flex: 1;
     background-color: darkkhaki;
+*/ 
+body 
+    .wrapper {
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+nav {
+    background: #333;
 }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding:18px ;
+    background-color: black;
+
+}
+nav a:hover {
+    background-color: #555;
+}
+@media screen and (min-width: 768px) {
+    nav ul {
+        display:block;
+        /*justify-content:flex-end ;*/
+        }
+        nav li {
+            /*flex: 1 1 0;*/
+        }
+    }
+    .logo 
+{
+    color: aqua;
+    display: flex;
+    justify-content: flex-start;
+
+}
+    
